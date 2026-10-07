@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    color: white;
+
+    background: #4f8f2f;
+}
+
+
+/* ======================================
+   GAME CONTAINER
+   ====================================== */
+
+.game-container {
+    width: 450px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background: #4f8f2f;
+
+    border: none;
+
+    border-radius: 0;
+
+    box-shadow: none;
+}
+
+
+/* ======================================
+   TITLE
+   ====================================== */
+
+h1 {
+    margin-bottom: 20px;
+
+    color: white;
+
+    font-size: 30px;
+
+    text-shadow: none;
+}
+
+
+/* ======================================
+   SCORE BOARD
+   ====================================== */
+
+.score-board {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.score-board div {
+    flex: 1;
+
+    padding: 12px;
+
+    background: #3f7626;
+
+    border: none;
+
+    border-radius: 10px;
+}
+
+.score-board span {
+    display: block;
+
+    font-size: 14px;
+
+    color: #e8f5d0;
+}
+
+.score-board strong {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 24px;
+
+    color: white;
+
+    text-shadow: none;
+}
+
+
+/* ======================================
+   GAME CANVAS
+   ====================================== */
+
+canvas {
+    display: block;
+
+    width: 400px;
+    height: 400px;
+
+    margin: auto;
+
+    background: #a8d94e;
+
+    border: none;
+
+    border-radius: 0;
+
+    box-shadow: none;
+}
+
+
+/* ======================================
+   GAME MESSAGE
+   ====================================== */
+
+#gameMessage {
+    margin: 18px 0;
+
+    color: white;
+
+    font-size: 15px;
+}
+
+
+/* ======================================
+   RESTART BUTTON
+   ====================================== */
+
+button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #3f7626;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: none;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #315d1e;
+
+    transform: translateY(-2px);
+}
+
+
+/* ======================================
+   MOBILE
+   ====================================== */
+
+@media (max-width: 500px) {
+
+    .game-container {
+        width: 100%;
+
+        padding: 15px;
+    }
+
+    canvas {
+        width: 90vw;
+        height: 90vw;
+
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .score-board {
+        gap: 10px;
+    }
+}
